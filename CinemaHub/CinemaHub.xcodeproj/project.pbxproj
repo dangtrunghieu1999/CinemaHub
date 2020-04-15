@@ -3,22 +3,24 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		90519D7EA34E5CBDC0915708 /* Pods_CinemaHub.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9A9D8A78EC186D8576CF73C /* Pods_CinemaHub.framework */; };
 		CF44F40A243AD1470019114C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF44F409243AD1470019114C /* AppDelegate.swift */; };
 		CF44F40E243AD1470019114C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF44F40D243AD1470019114C /* ViewController.swift */; };
-		CF44F411243AD1470019114C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF44F40F243AD1470019114C /* Main.storyboard */; };
 		CF44F413243AD1480019114C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF44F412243AD1480019114C /* Assets.xcassets */; };
 		CF44F416243AD1480019114C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF44F414243AD1480019114C /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		64D9FF0C81A4F0DF6C0B64CF /* Pods-CinemaHub.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CinemaHub.debug.xcconfig"; path = "Target Support Files/Pods-CinemaHub/Pods-CinemaHub.debug.xcconfig"; sourceTree = "<group>"; };
+		B920E5588BDE67DF0E12B1D6 /* Pods-CinemaHub.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CinemaHub.release.xcconfig"; path = "Target Support Files/Pods-CinemaHub/Pods-CinemaHub.release.xcconfig"; sourceTree = "<group>"; };
+		B9A9D8A78EC186D8576CF73C /* Pods_CinemaHub.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CinemaHub.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF44F406243AD1470019114C /* CinemaHub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CinemaHub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF44F409243AD1470019114C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CF44F40D243AD1470019114C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		CF44F410243AD1470019114C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CF44F412243AD1480019114C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CF44F415243AD1480019114C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CF44F417243AD1480019114C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -29,17 +31,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90519D7EA34E5CBDC0915708 /* Pods_CinemaHub.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		637642715D0884F4924DE687 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				64D9FF0C81A4F0DF6C0B64CF /* Pods-CinemaHub.debug.xcconfig */,
+				B920E5588BDE67DF0E12B1D6 /* Pods-CinemaHub.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		CF44F3FD243AD1470019114C = {
 			isa = PBXGroup;
 			children = (
 				CF44F408243AD1470019114C /* CinemaHub */,
 				CF44F407243AD1470019114C /* Products */,
+				637642715D0884F4924DE687 /* Pods */,
+				DB5E1525BEAEF0009E763D72 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,12 +70,19 @@
 			children = (
 				CF44F409243AD1470019114C /* AppDelegate.swift */,
 				CF44F40D243AD1470019114C /* ViewController.swift */,
-				CF44F40F243AD1470019114C /* Main.storyboard */,
 				CF44F412243AD1480019114C /* Assets.xcassets */,
 				CF44F414243AD1480019114C /* LaunchScreen.storyboard */,
 				CF44F417243AD1480019114C /* Info.plist */,
 			);
 			path = CinemaHub;
+			sourceTree = "<group>";
+		};
+		DB5E1525BEAEF0009E763D72 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B9A9D8A78EC186D8576CF73C /* Pods_CinemaHub.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +92,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CF44F41A243AD1480019114C /* Build configuration list for PBXNativeTarget "CinemaHub" */;
 			buildPhases = (
+				E1EE990804CE7F872551BECC /* [CP] Check Pods Manifest.lock */,
 				CF44F402243AD1470019114C /* Sources */,
 				CF44F403243AD1470019114C /* Frameworks */,
 				CF44F404243AD1470019114C /* Resources */,
+				9B7CD0E578257844FC109AC3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -124,11 +147,52 @@
 			files = (
 				CF44F416243AD1480019114C /* LaunchScreen.storyboard in Resources */,
 				CF44F413243AD1480019114C /* Assets.xcassets in Resources */,
-				CF44F411243AD1470019114C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9B7CD0E578257844FC109AC3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CinemaHub/Pods-CinemaHub-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CinemaHub/Pods-CinemaHub-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CinemaHub/Pods-CinemaHub-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E1EE990804CE7F872551BECC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CinemaHub-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CF44F402243AD1470019114C /* Sources */ = {
@@ -143,14 +207,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		CF44F40F243AD1470019114C /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CF44F410243AD1470019114C /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		CF44F414243AD1480019114C /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -278,6 +334,7 @@
 		};
 		CF44F41B243AD1480019114C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 64D9FF0C81A4F0DF6C0B64CF /* Pods-CinemaHub.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -288,7 +345,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = trunghieu.com.CinemaHub;
+				PRODUCT_BUNDLE_IDENTIFIER = com.trunghieu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -297,6 +354,7 @@
 		};
 		CF44F41C243AD1480019114C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B920E5588BDE67DF0E12B1D6 /* Pods-CinemaHub.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -307,7 +365,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = trunghieu.com.CinemaHub;
+				PRODUCT_BUNDLE_IDENTIFIER = com.trunghieu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
